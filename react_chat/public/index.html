@@ -5,18 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" id="theme">
     <title></title>
 </head>
+
 <body>
-    <section id="container">
-        <div>
-            <label for="username-input">Username</label>
+    <button id="switchMode">Switch</button>
+    <header class="header">
+        React_chat
+    </header>
+    <div id="container">
+        <div id="login">
+            <label class = "enter-name" for="username-input">Enter your name</label>
             <input type="text" id="username-input" class="form-control">
-            <br>
             <button id="connect-btn" class="btn btn-primary">Connect</button>
         </div>
-    </section>
+    </div>
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="lib/react/react-with-addons.js"></script>
