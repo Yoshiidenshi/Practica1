@@ -14,5 +14,4 @@ var UsersList = React.createClass({
         </div>
         )
     }
-}
-)
+})
